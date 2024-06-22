@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+html {
+  overflow-x: hidden;
+  background-color: rgb(255, 238, 218);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(255, 238, 218);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.date {
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 5px solid black;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.Nav-title {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 5px solid black;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.Nav-title h1 {
+  font-size: 65px;
+}
+
+.tabs {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 500px) {
+  .Nav-title h1 {
+    font-size: 40px;
+  }
+
+  .Filters {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+    position: static;
+    background-color: rgb(255, 238, 218);
+    margin-bottom: 10px;
+  }
+
+  .Categories {
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Home {
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.ArticleBox {
+  text-decoration: none;
+  background-color: rgb(255, 238, 218);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Filters {
+  padding-left: 50px;
+  top: 0;
+  position: sticky;
+  height: 100vh;
+  padding-top: 10px;
+  background-color: rgb(255, 238, 218);
+}
+
+.Categories {
+  padding-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
 }
